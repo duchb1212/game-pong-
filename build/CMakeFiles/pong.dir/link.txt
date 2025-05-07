@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/pong.dir/src/ball.cpp.o CMakeFiles/pong.dir/src/game.cpp.o CMakeFiles/pong.dir/src/main.cpp.o CMakeFiles/pong.dir/src/paddle.cpp.o CMakeFiles/pong.dir/src/render.cpp.o  -o pong  -lSDL2 
