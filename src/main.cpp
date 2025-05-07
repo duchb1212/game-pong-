@@ -26,7 +26,7 @@ int main(int argc, char* argv[]) {
 
     
     Uint32 frameStart;
-    const Uint32 frameDelay = 1000 / 60; 
+    const Uint32 frameDelay = 1000 / 120; 
     while (game.running) {
         frameStart = SDL_GetTicks();
 

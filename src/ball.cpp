@@ -2,7 +2,7 @@
 #include "game.hpp"
 #include <random>
 
-constexpr float BALL_SPEED = 6.0f;
+constexpr float BALL_SPEED = 4.0f;
 
 Ball::Ball(int window_width, int window_height) {
     x = window_width / 2.0f;
