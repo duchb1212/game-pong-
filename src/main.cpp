@@ -26,7 +26,8 @@ int main(int argc, char* argv[]) {
 
     
     Uint32 frameStart;
-    const Uint32 frameDelay = 1000 / 120; 
+    const Uint32 frameDelay = 1000 / 120;
+    bool paused = false; 
     while (game.running) {
         frameStart = SDL_GetTicks();
 
@@ -36,10 +37,15 @@ int main(int argc, char* argv[]) {
             if (event.type == SDL_QUIT) {
                 game.running = false;
             }
+            if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_SPACE) {
+                paused = !paused; 
+            }
         }
 
         
-        game.update();
+        if (!paused) { 
+            game.update();
+        }
 
         
         renderer.draw(game);
