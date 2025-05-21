@@ -20,6 +20,7 @@ public:
 
     Game();
     void update();
+    void reset(); // Added reset method
 };
 
 #endif

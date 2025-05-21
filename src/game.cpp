@@ -28,3 +28,10 @@ void Game::update() {
         running = false;
     }
 }
+
+void Game::reset() {
+    paddle1 = Paddle(20, WINDOW_HEIGHT);
+    paddle2 = Paddle(WINDOW_WIDTH - 20 - PADDLE_WIDTH, WINDOW_HEIGHT);
+    ball = Ball(WINDOW_WIDTH, WINDOW_HEIGHT);
+    running = true;
+}

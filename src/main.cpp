@@ -37,8 +37,13 @@ int main(int argc, char* argv[]) {
             if (event.type == SDL_QUIT) {
                 game.running = false;
             }
-            if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_SPACE) {
-                paused = !paused; 
+            if (event.type == SDL_KEYDOWN) {
+                if (event.key.keysym.sym == SDLK_SPACE) {
+                    paused = !paused; 
+                }
+                if (event.key.keysym.sym == SDLK_r) {
+                    game.reset(); // Reset game when 'R' is pressed
+                }
             }
         }
 
