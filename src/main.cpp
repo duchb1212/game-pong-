@@ -42,12 +42,11 @@ int main(int argc, char* argv[]) {
                     paused = !paused; 
                 }
                 if (event.key.keysym.sym == SDLK_r) {
-                    game.reset(); // Reset game when 'R' is pressed
+                    game.reset(); 
                 }
             }
         }
 
-        
         if (!paused) { 
             game.update();
         }
